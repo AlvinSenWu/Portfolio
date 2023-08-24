@@ -10,37 +10,37 @@
 </head>
 <body>
 
-    <!-- navigation header -->
-    <nav id="desktop-nav">
+  <!-- desktop nav -->
+  <nav id="desktop-nav">
     <div class="logo">Alvin Wu</div>
     <div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li> <a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <!-- <li><a href="#contact">Contact</a></li> -->
-        </ul>
-            
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
-    </nav>
+  </nav>
 
-    <!-- hamburger navigation -->
-    <nav id="hamburger-nav">
-        <div class="logo">Alvin Wu</div>
-        <div class="hamburger-menu">
-          <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          </div>
-        </div>
-      </nav>
+
+  <!-- hamburger -->
+  <nav id="hamburger-nav">
+    <div class="logo">Alvin Wu</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
 
       <!-- profile section -->
       <section id="profile">
@@ -58,7 +58,7 @@
                 Download CV
                 </button>
 
-                <a href='mailto:alvinwu246@gmail.com'><button class="btn btn-color-1">
+                <a href='#contact'><button class="btn btn-color-1">
                     Contact me
                   </button>
                 </a>
@@ -118,7 +118,12 @@
                 </div>
             </div>
         </div>
-        <!-- <a href="#experience"></a><img src="./assets/arrow.png" alt="arrow icon" class="icon arrow"></a> -->
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
       </section>
 
       <!-- experience -->
@@ -342,7 +347,7 @@
                       <p>Basic</p>
                     </div>
                   </article>
-
+<!-- 
                   <article>
                     <img
                       src="./assets/checkmark.png"
@@ -350,10 +355,10 @@
                       class="icon"
                     />
                     <div>
-                      <h3>Android Studio</h3>
+                      <h3>Android</h3>
                       <p>Experienced</p>
                     </div>
-                  </article>
+                  </article> -->
 
 
                   <article>
@@ -397,12 +402,12 @@
 
           </div>
         </div>
-        <!-- <img
+        <img
           src="./assets/arrow.png"
           alt="Arrow icon"
           class="icon arrow"
-          onclick="location.href='./#projects'"
-        /> -->
+          onclick="location.href='#projects'"
+        />
       </section>
 
 
@@ -468,7 +473,7 @@
               </div>
               <p class="project-description"> Official Website for the Derda Research Group containing information regarding of Research, Joining, Current Members, etc.
             </p>
-            <p>Tech Used: <b>PHP, Wordpress, HTML/CSS</b><p/>
+            <p>Tech Used: <b>PHP, Wordpress, JavaScript, HTML/CSS</b><p/>
             </div>
             <div class="details-container color-container">
               <div class="article-container">
@@ -493,15 +498,43 @@
             <p>Tech Used: <b>Python, discord.py</b><p/>
             </div>
             
+            
+          </div>
+
+        </div>
+
+
+      </section>
+
+
+      <!-- contact -->
+
+      <section id="contact">
+        <p class="section__text__p1">Reach out</p>
+        <h1 class="title">Contact / Socials</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <a href="mailto:examplemail@gmail.com">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+          </a>
+    
+          </div>
+          <div class="contact-info-container">
+            <a href="https://www.linkedin.com">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            /></a>
+           
           </div>
         </div>
-        <!-- <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#projects'"
-        /> -->
       </section>
+
 
       <footer>
         <nav>
@@ -510,7 +543,7 @@
               <li><a href="#about">About</a></li>
               <li><a href="#experience">Experience</a></li>
               <li><a href="#projects">Projects</a></li>
-              <!-- <li><a href="#contact">Contact</a></li> -->
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
         </nav>
