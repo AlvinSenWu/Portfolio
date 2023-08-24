@@ -12,8 +12,20 @@
   #desktop-nav {
     display: none;
   }
+
+  .logo{
+    display: flex;
+    /* background-color: black; */
+    justify-content: center;
+    align-items: center;
+  }
+
   #hamburger-nav {
     display: flex;
+/* remove below when hamburger fixed */
+    justify-content: center;
+    align-items: center;
+
   }
   #experience,
   .experience-details-container {
@@ -76,7 +88,17 @@
   }
   .logo {
     font-size: 1.5rem;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
+  .center-logo{
+    background-color: black;
+  }
+
+
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
@@ -96,4 +118,5 @@
   .text-container {
     text-align: justify;
   }
+
 }
