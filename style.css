@@ -193,6 +193,7 @@ a:hover{
 .section__pic-container{
     display: flex;
     justify-content: center;
+    /* align-items: flex-start; */
     height: 400px;
     width: 400px;
     margin: auto 0;
@@ -323,7 +324,7 @@ a:hover{
   
   .about-pic {
     border-radius: 2rem;
-    clip-path: circle();
+    /* clip-path: circle(); */
   }
   
   .arrow {
